@@ -13,4 +13,6 @@ public:
     void turnLeft(int speed);
     void turnRight(int speed);
     void stop();
+
+    void changeSpeedSmoothly(int targetSpeed);
 };
