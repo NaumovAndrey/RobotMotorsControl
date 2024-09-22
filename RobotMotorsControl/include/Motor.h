@@ -14,5 +14,3 @@ public:
     void turnRight(int speed);
     void stop();
 };
-
-

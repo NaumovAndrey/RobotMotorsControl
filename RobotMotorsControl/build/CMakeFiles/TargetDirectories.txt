@@ -1,0 +1,3 @@
+/home/naumov/Documents/skillbox/git/git_/RobotMotorsControl/RobotMotorsControl/build/CMakeFiles/rebuild_cache.dir
+/home/naumov/Documents/skillbox/git/git_/RobotMotorsControl/RobotMotorsControl/build/CMakeFiles/edit_cache.dir
+/home/naumov/Documents/skillbox/git/git_/RobotMotorsControl/RobotMotorsControl/build/CMakeFiles/program.dir

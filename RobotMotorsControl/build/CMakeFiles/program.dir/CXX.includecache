@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/naumov/Documents/skillbox/git/git_/RobotMotorsControl/RobotMotorsControl/include/Motor.h
+
+/home/naumov/Documents/skillbox/git/git_/RobotMotorsControl/RobotMotorsControl/include/RobotController.h
+./Motor.h
+/home/naumov/Documents/skillbox/git/git_/RobotMotorsControl/RobotMotorsControl/include/Motor.h
+
+/home/naumov/Documents/skillbox/git/git_/RobotMotorsControl/RobotMotorsControl/src/RobotController.cpp
+../include/RobotController.h
+/home/naumov/Documents/skillbox/git/git_/RobotMotorsControl/RobotMotorsControl/include/RobotController.h
+iostream
+-
+thread
+-
+chrono
+-
+
+/home/naumov/Documents/skillbox/git/git_/RobotMotorsControl/RobotMotorsControl/src/RobotMotorsControl.cpp
+../include/RobotController.h
+/home/naumov/Documents/skillbox/git/git_/RobotMotorsControl/RobotMotorsControl/include/RobotController.h
+

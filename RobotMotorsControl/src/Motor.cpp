@@ -1,4 +1,5 @@
 #include "../include/Motor.h"
+#include <iostream>
 
 Motor::Motor(){}
 Motor::~Motor(){}
