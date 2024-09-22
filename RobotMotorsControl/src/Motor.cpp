@@ -1,5 +1,6 @@
 #include "../include/Motor.h"
 #include <iostream>
+#include "Motor.h"
 
 Motor::Motor(){}
 Motor::~Motor(){}
@@ -27,4 +28,16 @@ void Motor::turnRight(int speed)
 void Motor::stop()
 {
     std::cout << "Двигатели остановлены." << std::endl;
+}
+
+void Motor::changeSpeedSmoothly(int targetSpeed)
+{
+    int step = (targetSpeed > currentSpeed) ? 1 : -1;
+    while (currentSpeed != targetSpeed)
+    {
+        currentSpeed +=step;
+        std::cout << "Текущая скорость: " << currentSpeed << std::endl;
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    }
+    
 }

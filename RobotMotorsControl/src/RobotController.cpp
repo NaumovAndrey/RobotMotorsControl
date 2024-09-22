@@ -20,7 +20,7 @@ void RobotController::simulateRobot() {
         }
 
         if (command == 'x') {
-            motor.stop();  // исправлено: доступ к мотору через объект класса
+            motor.stop();  
         } else {
             std::cout << "Введите скорость (0-100): ";
             std::cin >> speed;
@@ -31,15 +31,19 @@ void RobotController::simulateRobot() {
 
             switch (command) {
                 case 'w':
-                    motor.moveForward(speed);  // исправлено: доступ к мотору через объект класса
+                    motor.changeSpeedSmoothly(speed);
+                    motor.moveForward(speed);  
                     break;
                 case 's':
+                    motor.changeSpeedSmoothly(speed);
                     motor.moveBackward(speed);
                     break;
                 case 'a':
+                    motor.changeSpeedSmoothly(speed);
                     motor.turnLeft(speed);
                     break;
                 case 'd':
+                    motor.changeSpeedSmoothly(speed);
                     motor.turnRight(speed);
                     break;
                 default:
