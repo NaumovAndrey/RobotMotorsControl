@@ -31,3 +31,45 @@ remote:
 To github.com:NaumovAndrey/RobotMotorsControl.git
  * [new branch]      smoothSpeed -> smoothSpeed
 Ветка «smoothSpeed» отслеживает внешнюю ветку «smoothSpeed» из «origin».```\
+
+
+naumov@pc-home:~/Documents/skillbox/git/git_/RobotMotorsControl/RobotMotorsControl$ git checkout main
+M       README.md
+D       RobotMotorsControl.cpp
+Переключились на ветку «main»
+Эта ветка соответствует «origin/main».
+naumov@pc-home:~/Documents/skillbox/git/git_/RobotMotorsControl/RobotMotorsControl$ git branch
+* main
+  smoothSpeed
+naumov@pc-home:~/Documents/skillbox/git/git_/RobotMotorsControl/RobotMotorsControl$ git merge smoothSpeed
+Обновление 854e2dd..75c675f
+Fast-forward
+ RobotMotorsControl/src/Motor.cpp           | 13 +++++++++++++
+ RobotMotorsControl/src/RobotController.cpp |  8 ++++++--
+ 2 files changed, 19 insertions(+), 2 deletions(-)
+naumov@pc-home:~/Documents/skillbox/git/git_/RobotMotorsControl/RobotMotorsControl$ git status
+Текущая ветка: main
+Ваша ветка опережает «origin/main» на 1 коммит.
+  (используйте «git push», чтобы опубликовать ваши локальные коммиты)
+
+Изменения, которые не в индексе для коммита:
+  (используйте «git add/rm <файл>...», чтобы добавить или удалить файл из индекса)
+  (используйте «git restore <файл>...», чтобы отменить изменения в рабочем каталоге)
+        изменено:      ../README.md
+        удалено:       ../RobotMotorsControl.cpp
+
+Неотслеживаемые файлы:
+  (используйте «git add <файл>...», чтобы добавить в то, что будет включено в коммит)
+        ../.vscode/
+
+индекс пуст (используйте «git add» и/или «git commit -a»)
+naumov@pc-home:~/Documents/skillbox/git/git_/RobotMotorsControl/RobotMotorsControl$ git commit -am'merge branch'
+[main f8dc3ea] merge branch
+ 2 files changed, 33 insertions(+), 16 deletions(-)
+ rewrite README.md (69%)
+ delete mode 100644 RobotMotorsControl.cpp
+```
+ 
+ Теперь можно удалить ветку smoothSpeed\
+ ```git push origin --delete smoothSpeed ``` на сервере git hub
+ ```git branch -d smoothSpeed``` локально
